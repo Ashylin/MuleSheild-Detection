@@ -46,12 +46,14 @@ Fraud Score = (Received Count × 2) + (Total Received ÷ 10000) − Sent Count
 ## 🏃 How to Run
 
 1. *Install dependencies*  
-```bash
 pip install pandas matplotlib
+
 2. Generate dataset
 python generate_data.py
+
 3. Detect suspicious accounts
 python detect_mule.py
+
 4. Outputs generated
 - Terminal table of flagged accounts
 - suspicious_accounts.csv
@@ -61,6 +63,8 @@ python detect_mule.py
 - System successfully identifies accounts with abnormal receiving patterns.
 - Generates fraud score ranking to prioritize investigation.
 - Visualization clearly shows high-risk accounts for quick analysis.
+
+  
 ## Impact & Future Scope
 - Can integrate into banking systems for real-time mule account detection.
 - Expand to ML-based detection using Isolation Forest or anomaly detection.
